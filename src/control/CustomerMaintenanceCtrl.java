@@ -5,8 +5,8 @@
  */
 package control;
 import agileassignment.CustomerInterface;
-import da.CustomerMaintenanceInvoicePaymentDA;
-import domain.CustomerMaintenanceInvoicePayment;
+import da.CustomerMaintenanceDA;
+import domain.CustomerMaintenance;
 import java.util.ArrayList;
 import java.util.Queue;
 
@@ -14,15 +14,15 @@ import java.util.Queue;
  *
  * @author liang
  */
-public class CustomerMaintenanceInvoicePaymentCtrl implements CustomerInterface{
-    private CustomerMaintenanceInvoicePaymentDA CMIPDA;
+public class CustomerMaintenanceCtrl implements CustomerInterface{
+    private CustomerMaintenanceDA CMIPDA;
     String name = "";
-    public CustomerMaintenanceInvoicePaymentCtrl(){
+    public CustomerMaintenanceCtrl(){
         
-        CMIPDA = new CustomerMaintenanceInvoicePaymentDA();
+        CMIPDA = new CustomerMaintenanceDA();
     }
   
-     public ArrayList<CustomerMaintenanceInvoicePayment> getCust() {
+     public ArrayList<CustomerMaintenance> getCust() {
         return CMIPDA.getCustomer();
     }
 

@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author liang
  */
-public class CustomerMaintenanceInvoicePayment implements Serializable{
+public class CustomerMaintenance implements Serializable{
     private String custID;
     private String custName;
     private String category;
@@ -21,7 +21,7 @@ public class CustomerMaintenanceInvoicePayment implements Serializable{
     private String address;
     private double creditLimit;
 
-    public CustomerMaintenanceInvoicePayment(String custID, String custName, String category, char gender, Date dob, String custPhone, String address, double creditLimit) {
+    public CustomerMaintenance(String custID, String custName, String category, char gender, Date dob, String custPhone, String address, double creditLimit) {
         this.custID = custID;
         this.custName = custName;
         this.category = category;
@@ -121,7 +121,7 @@ public class CustomerMaintenanceInvoicePayment implements Serializable{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final CustomerMaintenanceInvoicePayment other = (CustomerMaintenanceInvoicePayment) obj;
+        final CustomerMaintenance other = (CustomerMaintenance) obj;
         if (this.gender != other.gender) {
             return false;
         }

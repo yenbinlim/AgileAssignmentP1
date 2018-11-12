@@ -5,9 +5,9 @@
  */
 package agileassignment;
 
-import control.CustomerMaintenanceInvoicePaymentCtrl;
+import control.CustomerMaintenanceCtrl;
 import java.util.Scanner;
-import da.CustomerMaintenanceInvoicePaymentDA;
+import da.CustomerMaintenanceDA;
 
 /**
  *
@@ -18,7 +18,7 @@ public class AgileAssignment {
     /**
      * @param args the command line arguments
      */
-    private static CustomerInterface CI = new CustomerMaintenanceInvoicePaymentCtrl();
+    private static CustomerInterface CI = new CustomerMaintenanceCtrl();
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.print("Enter corporate customer name: ");
