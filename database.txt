@@ -6,5 +6,27 @@ CREATE TABLE "CUSTOMER"(
     "CUST_DOB" DATE,
     "CUST_PHONE" VARCHAR(11),    
     "CUST_ADDRESS" VARCHAR(100),
-    "CUST_LIMIT" VARCHAR(3)
+    "CUST_LIMIT" DOUBLE
+);
+
+INSERT INTO CUSTOMER VALUES ('C0001','Loh Hong Liang','Consumer','M','1997-06-23','011-1112345','No 6, Jalan Jaya 5, Taman Jaya, 52100 Kepong, KL',0);
+INSERT INTO CUSTOMER VALUES ('C0002','Cheong Li Jie','Corporate Customer','M','1996-10-14','011-1322122','No 6, Jalan gaga 5, taman gaga, 52100 setapak, KL',2000.00);
+
+CREATE TABLE "PRODUCT"(
+    "PROD_ID" VARCHAR(5) not null primary key,
+    "PROD_NAME" VARCHAR(50),
+    "PROD_PRICE" DOUBLE,
+    "PROD_DETAIL" VARCHAR(200)
+);
+INSERT INTO PRODUCT VALUES ('P0001','Orchids',10.00,'I DUNNO WHAT WAN TO WRITE');
+
+
+CREATE TABLE "INVOICE"(
+    "INV_ID" VARCHAR(5) not null primary key,
+    "CUST_ID" VARCHAR(5),
+    "PROD_ID" VARCHAR(5),
+    "QUANTITY" INT,
+    "PRICE" DOUBLE,
+    foreign key ("CUST_ID") references "CUSTOMER"("CUST_ID"),
+    foreign key ("PROD_ID") references "PRODUCT"("PROD_ID")
 );
