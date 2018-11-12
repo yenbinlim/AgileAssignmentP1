@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agileassignment;
+package Interface;
 
 import control.CustomerMaintenanceCtrl;
 import java.util.Scanner;
@@ -13,7 +13,7 @@ import da.CustomerMaintenanceDA;
  *
  * @author liang
  */
-public class AgileAssignment {
+public class CustomerMaintenance {
 
     /**
      * @param args the command line arguments

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package control;
-import agileassignment.CustomerInterface;
+import Interface.CustomerInterface;
 import da.CustomerMaintenanceDA;
 import domain.CustomerMaintenance;
 import java.util.ArrayList;

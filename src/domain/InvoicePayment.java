@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agileassignment;
-
-import java.util.Queue;
+package domain;
 
 /**
  *
  * @author liang
  */
-public interface CustomerInterface {
+public class InvoicePayment {
     
-    Queue getCustInfo();
-    
-    void setCustName(String name);
 }
