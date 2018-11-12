@@ -21,7 +21,7 @@ public class AgileAssignment {
     private static CustomerInterface CI = new CustomerMaintenanceInvoicePaymentCtrl();
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        System.out.print("Enter corporate customer name: ");
 //        System.out.print("Customer Type: 1. Consumer 2. Corporate Customer? (Enter Number)");
         Scanner s = new Scanner(System.in);
         String name = s.nextLine();

@@ -152,7 +152,7 @@ public class CustomerMaintenanceInvoicePayment implements Serializable{
     
     @Override
     public String toString() {
-        return "CustomerMaintenanceInvoicePayment{" + "custID=" + custID + ", custName=" + custName + ", category=" + category + ", gender=" + gender + ", dob=" + dob + ", custPhone=" + custPhone + ", address=" + address + ", creditLimit=" + creditLimit + '}';
+        return "ID= " + custID + "\nName= " + custName + "\nCategory= " + category + "\nGender= " + gender + "\nDate of Birth= " + dob + "\nPhone= " + custPhone + "\nAddress= " + address + "\nCreditLimit= " + creditLimit ;
     }
 
 
