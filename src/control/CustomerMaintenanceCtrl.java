@@ -37,4 +37,8 @@ public class CustomerMaintenanceCtrl implements CustomerInterface{
     public void setCustName(String name) {
         this.name = name;
     }
+    
+    public CustomerMaintenance selectRecord(String name){
+        return CMIPDA.selectRecord(name);
+    }
 }

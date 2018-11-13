@@ -66,5 +66,24 @@ public class CustomerMaintenanceDA {
         return q;
     }
     
+    public CustomerMaintenance selectRecord(String name) {
+        String queryStr = "SELECT * FROM " + tableName + " WHERE CUST_NAME = ?";
+        CustomerMaintenance cm = null;
+        try {
+            stmt = conn.prepareStatement(queryStr);
+            stmt.setString(1, name);
+            
+            ResultSet rs = stmt.executeQuery();
+            
+            if (rs.next()) {
+               cm = new CustomerMaintenance(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4).charAt(0),rs.getDate(5),rs.getString(6),rs.getString(7),rs.getDouble(8));
+                // staff = new Staff(id,rs.getString(2),rs.getDate(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7).charAt(0));     
+            }
+        } catch (SQLException ex) {
+            System.out.print("Error at selectRecord");
+        }
+        return cm;
+    } 
+    
    
     }
