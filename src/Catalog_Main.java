@@ -105,7 +105,6 @@ public class Catalog_Main extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jbtAdd = new javax.swing.JButton();
-        jbtUpdate = new javax.swing.JButton();
         jbtDelete = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -131,13 +130,6 @@ public class Catalog_Main extends javax.swing.JFrame {
             }
         });
 
-        jbtUpdate.setText("Update");
-        jbtUpdate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbtUpdateActionPerformed(evt);
-            }
-        });
-
         jbtDelete.setText("Delete");
         jbtDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,9 +149,7 @@ public class Catalog_Main extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(132, 132, 132)
                         .addComponent(jbtAdd)
-                        .addGap(117, 117, 117)
-                        .addComponent(jbtUpdate)
-                        .addGap(120, 120, 120)
+                        .addGap(304, 304, 304)
                         .addComponent(jbtDelete)))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -171,7 +161,6 @@ public class Catalog_Main extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtAdd)
-                    .addComponent(jbtUpdate)
                     .addComponent(jbtDelete))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
@@ -190,13 +179,6 @@ public class Catalog_Main extends javax.swing.JFrame {
         Catalog_Main main = new Catalog_Main();
         delete.setVisible(true);
     }//GEN-LAST:event_jbtDeleteActionPerformed
-
-    private void jbtUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtUpdateActionPerformed
-         Catalog_Update update = new Catalog_Update();
-        Catalog_Main main = new Catalog_Main();
-        
-        update.setVisible(true);
-    }//GEN-LAST:event_jbtUpdateActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,6 +220,5 @@ public class Catalog_Main extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JButton jbtAdd;
     private javax.swing.JButton jbtDelete;
-    private javax.swing.JButton jbtUpdate;
     // End of variables declaration//GEN-END:variables
 }
