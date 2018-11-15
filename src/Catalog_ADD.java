@@ -253,6 +253,7 @@ public class Catalog_ADD extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
         }
     } //To change body of generated methods, choose Tools | Templates.
+    //
     }
 
 
